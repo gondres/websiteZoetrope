@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: white;
+}
+.logo {
+  display: flex;
+  margin-right: 25px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-style: groove;
+  border-width: 2px;
+  border-color: black;
+}
+
+ul li {
+  margin-right: 25px;
+}
+
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  color: wheat;
+}
+
+.header {
+  padding-top: 100px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+.elemen1 {
+  position: relative;
+  bottom: 120px;
+  left: 0px;
+}
+.whatsInLine {
+  margin: 100px;
+}
+.deskripsi {
+  color: black;
+}
+.isiBody {
+  background: url("images/bg_whats.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.inlineNatural {
+  display: flex;
+}
+.NaturalHeader {
+  position: relative;
+  bottom: 300px;
+}
+.NaturalText {
+  position: relative;
+  left: 380px;
+  bottom: 300px;
+  width: 40%;
+}
+
+.honeyImage {
+  float: right;
+}
+.HoneyHeader {
+  position: relative;
+  bottom: 300px;
+  left: 50px;
+}
+.HoneyText {
+  position: relative;
+  bottom: 300px;
+  left: 380px;
+  width: 40%;
+}
+
+.FullWashHeader {
+  position: relative;
+  bottom: 300px;
+  left: 15px;
+}
+.FullWashText {
+  position: relative;
+  left: 380px;
+  bottom: 300px;
+  width: 40%;
+}
+
+.Products {
+  align-items: center;
+  background: url(images/bg_products.jpg);
+  background-size: cover;
+  background-position: center;
+}
+button.btnProducts {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 2px 0;
+  width: 80%;
+  color: white;
+  border-radius: 10px;
+  background-color: #161e54;
+  border: 0;
+  outline: none;
+}
+.card {
+  height: 350;
+  border-style: solid;
+  border-color: black;
+  border-width: 55px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+  justify-content: space-around;
+}
+.Customers {
+  align-items: center;
+  background: url(images/bg_customers.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Customers img {
+  align-items: center;
+  height: 250px;
+  width: 449px;
+  vertical-align: middle;
+}
+
+.btn1 {
+  position: relative;
+  width: 200px;
+  left: 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Customers.card {
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+}
+
+.Products2 {
+  position: relative;
+  left: 50px;
+}
+
+footer {
+  top: 250px;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 200px;
+  border-style: groove;
+  border-width: 2px;
+  border-color: black;
+  font-family: "Open Sans";
+  padding-top: 0px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  position: relative;
+  top: px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  color: black;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 10 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials svg {
+  position: relative;
+  bottom: 10px;
+}
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  color: black;
+  border-style: groove;
+  border-width: 2px;
+  border-color: black;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+/*MediaScreen*/
+@media only screen and (max-width: 640px) {
+  nav {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+
+    position: absolute;
+    top: 75px;
+    right: 0;
+    padding: 20px;
+    left: 1px;
+    z-index: 2;
+  }
+  .logo {
+    position: relative;
+    left: 170px;
+    color: white;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-weight: 900;
+    color: wheat;
+  }
+
+  .btn {
+    position: relative;
+    left: 195px;
+  }
+  h1.Brand {
+    text-align: center;
+  }
+  p.BrandText {
+    text-align: center;
+  }
+  .elemen1 {
+    position: relative;
+    bottom: 480px;
+    left: 20px;
+  }
+
+  /*End of Header Brand*/
+
+  /*Body Natural*/
+  .isiBody {
+    background: url(images/bg_whats.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 3500px;
+    background-position: center;
+  }
+  .inlineNatural {
+    display: flex;
+    align-items: center;
+  }
+  .inlineNatural img {
+    position: relative;
+    left: 0px;
+    right: 0;
+    width: 100%;
+  }
+  h3.NaturalHeader {
+    position: relative;
+    text-align: center;
+    top: 25px;
+    right: 50px;
+  }
+  p.NaturalText {
+    position: relative;
+    text-align: justify;
+    top: 30px;
+    left: 0px;
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  /*End of Body Natural*/
+
+  /*Body Honey*/
+  .inlineHoney {
+    display: flex;
+    align-items: center;
+  }
+  .inlineHoney img {
+    position: relative;
+    width: 100%;
+  }
+
+  h3.HoneyHeader {
+    position: relative;
+    text-align: center;
+    top: 25px;
+    left: -35px;
+  }
+  p.HoneyText {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    left: 0px;
+    width: 150%;
+    margin-bottom: 100px;
+  }
+  /*End of Body Honey*/
+
+  /*Body FullWash*/
+  .inlineFullWash {
+    display: flex;
+    align-items: center;
+  }
+  .inlineFullWash img {
+    width: 100%;
+  }
+
+  h3.FullWashHeader {
+    position: relative;
+    top: 30px;
+    left: -35px;
+  }
+  p.FullWashText {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 150%;
+    margin-bottom: 250px;
+  }
+
+  /*End of Body FullWash*/
+
+  /*Card Products*/
+  .Products {
+    align-items: center;
+    background: url(images/bg_products.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1500px;
+  }
+  .card {
+    height: 150;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 55px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+    justify-content: space-around;
+  }
+  .card1 {
+    position: absolute;
+    float: left;
+    right: 25px;
+  }
+  .card2 {
+    position: absolute;
+    float: right;
+    left: 0px;
+    bottom: 360px;
+  }
+  .card3 {
+    right: 25px;
+    bottom: 365px;
+  }
+
+  .card4 {
+    float: right;
+    left: 0px;
+    bottom: 725px;
+  }
+
+  .card5 {
+    float: left;
+    right: 25px;
+    bottom: 730px;
+  }
+  .card6 {
+    float: right;
+    left: 0px;
+    bottom: 1090px;
+  }
+
+  .card7 {
+    float: left;
+    right: 25px;
+    bottom: 1095px;
+  }
+
+  .card8 {
+    float: right;
+    left: 0px;
+    bottom: 1455px;
+  }
+
+  /*End of Products Card*/
+
+  /*Body of Customers*/
+  .Customers {
+    background: url(images/bg_customers.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  .Customers h2.HeadCustomers {
+    position: relative;
+  }
+  .Customers h2.HeadCustomers {
+    position: relative;
+    left: 30px;
+  }
+  .Customers img {
+    width: 100%;
+  }
+
+  .btn1 {
+    position: relative;
+    left: 55px;
+  }
+  .Customers1 {
+    position: absolute;
+
+    width: 100%;
+  }
+  .Customers2 {
+    width: 100%;
+    position: absolute;
+    left: 35px;
+  }
+  .Customers3 {
+    position: absolute;
+    right: 100px;
+    width: 100%;
+  }
+
+  .card_title {
+    color: black;
+    text-align: center;
+  }
+
+  /*End of Body of Customers*/
+
+  footer {
+    position: relative;
+    top: 2350px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 200px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: black;
+    font-family: "Open Sans";
+    padding-top: 0px;
+    color: #fff;
+  }
+
+  .footer-bottom {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+  }
+}
